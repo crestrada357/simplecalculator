@@ -9,35 +9,47 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-       <div class="calculator">
-            <div class="screen-area">
-                <textarea class="screen">0</textarea>
+        <nav>
+            <h1>SimpleCalculator</h1>
+        </nav>
+        <main>
+            <div class="calculator">
+                    <form name="calc">            
+                        <div class="screen-area">
+                            <input id="screen" type="text" class="screen" name="screen" placeholder="0"></input>
+                        </div>
+                        <div class="keyboard">
+                            <div class="numbers">
+                                <input type="button" class="calc-button" value="9" onclick = "calc.screen.value+= '9' "></input>
+                                <input type="button" class="calc-button" value="8" onclick = "calc.screen.value+= '8' "></input>
+                                <input type="button" class="calc-button" value="7" onclick = "calc.screen.value+= '7' "></input>
+
+                                <input type="button" class="calc-button" value="6" onclick = "calc.screen.value+= '6' "></input>
+                                <input type="button" class="calc-button" value="5" onclick = "calc.screen.value+= '5' "></input>
+                                <input type="button" class="calc-button" value="4" onclick = "calc.screen.value+= '4' "></input>
+
+                                <input type="button" class="calc-button" value="3" onclick = "calc.screen.value+= '3' "></input>
+                                <input type="button" class="calc-button" value="2" onclick = "calc.screen.value+= '2' "></input>
+                                <input type="button" class="calc-button" value="1" onclick = "calc.screen.value+= '1' "></input>
+
+                                <input type="button" class="calc-button" value="." onclick = "calc.screen.value+= '.' "></input>
+                                <input type="button" class="calc-button" value="0" onclick = "calc.screen.value+= '0' "></input>
+                                <input type="button" class="calc-button" value="AC" onclick = "calc.screen.value= '' "></input>
+                            </div>
+                            <div class="operations">
+                                <input type="button" class="operation-button" value="+" onclick = "calc.screen.value+= '+' "></input>
+                                <input type="button" class="operation-button" value="-" onclick = "calc.screen.value+= '-' "></input>
+                                <input type="button" class="operation-button" value="*" onclick = "calc.screen.value+= '*' "></input>
+                                <input type="button" class="operation-button" value="/" onclick = "calc.screen.value+= '/' "></input>
+
+                                <input type="button" class="equals-button" value = "=" onclick = "calc.screen.value = eval(calc.screen.value) "></input>
+                            </div>
+                        </div>
+                    </form>
             </div>
-            <div class="keyboard">
-                <button class="calc-button">+</button>
-                <button class="calc-button">-</button>
-                <button class="calc-button">*</button>
-                <button class="calc-button">/</button>
-
-                <button class="calc-button">9</button>
-                <button class="calc-button">8</button>
-                <button class="calc-button">7</button>
-
-                <button class="calc-button">6</button>
-                <button class="calc-button">5</button>
-                <button class="calc-button">4</button>
-
-                <button class="calc-button">3</button>
-                <button class="calc-button">2</button>
-                <button class="calc-button">1</button>
-
-                <button class="calc-button">.</button>
-                <button class="calc-button">0</button>
-                <button class="calc-button">AC</button>
-
-                <button class="equals-button">=</button>
-            </div>
-       </div>
-        <script src="" async defer></script>
+        </main>
+        <footer>
+            <h2>© Christian Estrada - 2022</h2>
+        </footer>
     </body>
 </html>

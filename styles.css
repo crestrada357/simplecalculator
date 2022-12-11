@@ -2,7 +2,21 @@
     margin:0;
     padding:0;
 }
-
+nav{
+    background-color: #262626;
+    color: #f0ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+}
+footer{
+    background-color: #262626;
+    color: #f0ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+h2{
+    text-align: right;
+}
 .calculator{
     width: 40%;
     padding: 1rem;
@@ -18,24 +32,45 @@
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: right;
     border-radius: 1rem;
 }
 .keyboard{
     border-radius: 1rem;
-    background-color: #383737;
+    background-color: #3837376a;
     width: 90%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+.numbers{
+    border-radius: 1rem;
+    background-color: #383737;
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+}
+.operations{
+    border-radius: 1rem;
+    background-color: #383737;
+    width: 15%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 .calc-button{
+    width: 25%;
+    flex-grow: 1;
     color: #f0ffff;
     font-size: 2rem;
     background-color: black;
@@ -43,16 +78,29 @@
     margin:0.5rem;
     padding:1rem;
 }
-.equals-button{
-    font-size: 3rem;
+.operation-button{
+    width: 30%;
+    flex-grow: 1;
     color: #f0ffff;
-    background-color: rgb(74, 73, 73);
+    font-size: 2rem;
+    background-color: #4a4949;
     border-radius: 1rem;
     margin:0.5rem;
     padding:1rem;
-    grid-area: 2/4/6/4;
+}
+.equals-button{
+    font-size: 3rem;
+    color: #f0ffff;
+    background-color: #4a4949;
+    border-radius: 1rem;
+    margin:0.5rem;
+    padding:1rem;
+    flex-grow: 1;
 }
 .calc-button:hover{
+    background-color: #262626;
+}
+.operation-button:hover{
     background-color: #262626;
 }
 .equals-button:hover{
